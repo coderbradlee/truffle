@@ -4,9 +4,9 @@
 // var FETCdatasets = artifacts.require("./FETCdatasets.sol");
 // // var FETClib=artifacts.require("./FETClib.sol");
 // var FomoETClong = artifacts.require("./FomoETClong.sol");
-var GeneScience = artifacts.require("GeneScience");
-var ERC721Metadata = artifacts.require("ERC721Metadata");
-var MonsterCoreAddress = artifacts.require("MonsterCore");
+var GeneScience = artifacts.require("GeneScienceInterface");
+// var ERC721Metadata = artifacts.require("ERC721Metadata");
+// var MonsterCoreAddress = artifacts.require("MonsterCore");
 // var Ownable = artifacts.require("Ownable");
 module.exports = function(deployer) {
   // deployer.deploy(SafeMath);
@@ -19,8 +19,8 @@ module.exports = function(deployer) {
   // deployer.link(NameFilter, FomoETClong);
   // deployer.link(FETCKeysCalcLong, FomoETClong);
   deployer.deploy(GeneScience);
-  deployer.deploy(ERC721Metadata);
-  deployer.deploy(MonsterCoreAddress);
+  // deployer.deploy(ERC721Metadata);
+  // deployer.deploy(MonsterCoreAddress);
   // deployer.deploy(FETClib);
   // deployer.link(FETClib, FomoETClong);
   // deployer.deploy(FomoETClong);
