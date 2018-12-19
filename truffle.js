@@ -17,12 +17,17 @@ module.exports = {
   // to customize your Truffle configuration!
   networks: {
     development: {
-    host: '192.168.1.52',
-    // host: '172.16.2.12',
-    port: 18545,
-    network_id: '*', // Match any network id
-    gas:100000000,
-    gasPrice: 50000000000,
-  }
+      host: '192.168.1.52',
+      // host: '172.16.2.12',
+      port: 18545,
+      network_id: '*', // Match any network id
+      gas:100000000,
+      gasPrice: 50000000000,
+    }
+  },
+  compilers: {
+    solc: {
+      version: "0.4.25"
+    }
   }
 };
