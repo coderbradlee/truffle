@@ -13,8 +13,8 @@ contract('MonsterCore', accounts => {
         this.contract = await MonsterCore.new({from: "0xc416d12f3EBA9D10A1Cf21E1E6ea6509Da009ec1"})
     })
     
-    describe('can create a star', () => { 
-        it('can create a star and get its name', async function () { 
+    describe('set params', () => { 
+        it('set params', async function () { 
 
             // await this.contract.createStar(
             //     starName,
@@ -25,7 +25,7 @@ contract('MonsterCore', accounts => {
             //     starId,
             //     {from: accounts[0]}
             // )
-            await this.contract.setCFO("0xc416d12f3EBA9D10A1Cf21E1E6ea6509Da009ec1")
+            await this.contract.setCFO({from: accounts[0]})
             // assert.deepEqual(await this.contract.tokenIdToStarInfo(starId), [starName, starStory, starRa, starDec, starMag]);
 
         })
