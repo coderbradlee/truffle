@@ -1,0 +1,27 @@
+// var SafeMath = artifacts.require("./SafeMath.sol");
+// var NameFilter = artifacts.require("./NameFilter.sol");
+// var FETCKeysCalcLong = artifacts.require("./FETCKeysCalcLong.sol");
+// var FETCdatasets = artifacts.require("./FETCdatasets.sol");
+// // var FETClib=artifacts.require("./FETClib.sol");
+// var FomoETClong = artifacts.require("./FomoETClong.sol");
+var GeneScience = artifacts.require("GeneScience");
+var ERC721Metadata = artifacts.require("ERC721Metadata");
+var MonsterCoreAddress = artifacts.require("MonsterCore");
+// var Ownable = artifacts.require("Ownable");
+module.exports = function(deployer) {
+  // deployer.deploy(SafeMath);
+  // deployer.deploy(FETCdatasets);
+  // deployer.deploy(NameFilter);
+  // deployer.link(SafeMath, FETCKeysCalcLong);
+  // deployer.deploy(FETCKeysCalcLong);
+  // deployer.link(SafeMath, FomoETClong);
+  // deployer.link(FETCdatasets, FomoETClong);
+  // deployer.link(NameFilter, FomoETClong);
+  // deployer.link(FETCKeysCalcLong, FomoETClong);
+  deployer.deploy(GeneScience);
+  deployer.deploy(ERC721Metadata);
+  deployer.deploy(MonsterCoreAddress);
+  // deployer.deploy(FETClib);
+  // deployer.link(FETClib, FomoETClong);
+  // deployer.deploy(FomoETClong);
+};
