@@ -10,7 +10,7 @@ contract('MonsterCore', accounts => {
     // let starId = 1;
 
     beforeEach(async function() { 
-        this.contract = await MonsterCore.new({from: "0xc416d12f3EBA9D10A1Cf21E1E6ea6509Da009ec1"})
+        this.contract = await MonsterCore.new({from: accounts[0]})
     })
     
     describe('set params', () => { 
